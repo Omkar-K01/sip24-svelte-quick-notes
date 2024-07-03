@@ -60,7 +60,7 @@
       {#each pages as page, index}
       <li>
         <button on:click={()=>selectPage(index)} class="{index== currentPageIndex ?"bg-light-yellow" :''} py-2 px-3 text-gray-900 rounded-lg ">{page}</button>
-        <button on:click ={()=>delPage(index)} class= "text-red-500 ml-2 hover:text-red-800">Delete</button>
+        <button on:click={()=>delPage(index)} class="text-red-500 ml-2 hover:text-red-800">Delete</button>
       </li>
       {/each}
       <li class="text-center"><button on:click={addPage} class="font-medium" >+ Add Page</button></li>
